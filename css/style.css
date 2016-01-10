@@ -5,6 +5,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .page-header {
@@ -15,8 +16,7 @@
 .page-header:before {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 80px;
     height: 14px;
     width: 100%;
     background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
@@ -72,59 +72,233 @@
 
 .promo {
     margin: 0 auto;
-    background-image: url("http://demo.epixx.ru/sp24-3/img/bg/bg_mainpage.jpg");
+    background: url(../img/bg_mainpage.jpg) no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
 }
 
+.promo:before {
+    content: '';
+    position: absolute;
+    top: 550px;
+    left: 0;
+    height: 14px;
+    width: 100%;
+    background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+    background-size: 35px 14px;
+}
+
 .promo-slogan {
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 60px;
+    font-size: 44px;
     text-transform: uppercase;
+    font-weight: bold;
     display: block;
+    margin: 130px 0 15px 0;
 }
 
 .promo-title {
-    display: block;
-    margin: 30px;
+    margin: 0 150px 35px 150px;
+    width: 640px;
+    color: #e2e2e2;
     font-size: 20px;
+    font-weight: normal;
 }
 
 .promo-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 2px solid #ffcd34;
-    margin-bottom: 60px;
-    font-weight: bold;
     padding: 7px 75px 7px 12px;
+    max-width: 25%;
+    border: 2px solid #ffcd34;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.promo-btn:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 19px;
+    background-image: url(../img/icons/arrow_right_icon.png);
+    background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 9px;
 }
 
 .consult {
-    background-color: gray;
+    background-color: #202e3b;
+}
+
+.consult-form {
+    margin-bottom: 40px;
 }
 
 .consult-title {
-    margin: 20px;
+    margin: 30px 30px 30px 20px;
     font-size: 24px;
     color: #ffcd34;
+    font-weight: normal;
 }
 
 .consult-input-text {
-    border: 2px solid #ffcd34;
-    padding: 7px 75px 7px 12px;
-    margin: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #202e3b;
+    border: 1px solid #ffcd34;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none
 }
 
 .consult-input-date {
-    border: 2px solid #ffcd34;
-    padding: 7px 75px 7px 12px;
-    margin: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    height: 42px;
+    background-color: #202e3b;
+    border: 1px solid #ffcd34;
+    border-radius: 0;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
 }
 
 .consult-input-submit {
-    border: 2px solid #ffcd34;
-    padding: 7px 75px 7px 12px;
-    margin: 5px;
+    background-color: #ffcd34;
+    border: none;
+    color: #202e3b;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.features{
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+
+.features-item{
+    width: 74%;
+    font-size: 13px;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.feature-item-tool:before {
+    content: '';
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/icons/advantages_item1.png);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 60px;
+    right: 50px;
+}
+
+.feature-item-work:before {
+    content: '';
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/icons/advantages_item2.png);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 60px;
+    right: 50px;
+}
+
+.feature-item-fencing:before {
+    content: '';
+    width: 31px;
+    height: 40px;
+    background-image: url(../img/icons/advantages_item3.png);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 60px;
+    right: 50px;
+}
+
+.feature-item-workman:before {
+    content: '';
+    width: 42px;
+    height: 40px;
+    background-image: url(../img/icons/advantages_item4.png);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 60px;
+    right: 50px;
+}
+
+.technic{
+    background-color: #f3f3f3;
+}
+
+.technic:before {
+    content: '';
+    position: absolute;
+    top: 1250px;
+    left: 0;
+    height: 14px;
+    width: 100%;
+    background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+    background-size: 35px 14px;
+}
+
+.subtitle{
+    margin: 25px 25px 25px 0;
+    font-size: 26px;
+}
+
+.technic-menu{
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.technic-menu li {
+    margin-bottom: 19px;
+    list-style-type: none;
+}
+
+.technic-menu li a{
+   color: black;
+}
+
+.deals-table table {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+.deals-table th {
+    text-align: left;
+}
+.deals-table th, .deals-table td {
+    padding: 5px 10px;
+}
+
+.deals-table tr:first-child {
+    background-color: #dfdfdf;
+}
+
+.deals-table tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+.deals-table tr:nth-child(n+2):nth-child(2n+1) {
+    background-color: #fff;
 }
